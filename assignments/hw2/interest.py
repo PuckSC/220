@@ -25,3 +25,7 @@ def main():
     # monthly interest charge
     interest_amt = avg_daily * ((int_rate / 100) / 12)
     print(round(interest_amt, 2))
+
+
+if __name__ == "__main__":
+    main()
