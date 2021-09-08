@@ -24,5 +24,4 @@ def main():
     avg_daily = ((prev_bal * billing_cycle) - (pay_amt * (billing_cycle - pay_day))) / billing_cycle
     # monthly interest charge
     interest_amt = avg_daily * ((int_rate / 100) / 12)
-    monthly_int = round(interest_amt, 2)
-    print(monthly_int)
+    print(round(interest_amt, 2))
