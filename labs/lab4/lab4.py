@@ -80,13 +80,12 @@ def rectangle():
 
     p = win.getMouse()
     q = win.getMouse()
-    l = abs(q.getX() - p.getX())
-    w = abs(q.getY() - p.getY())
-    rShape = Rectangle(p, q)
-    rShape.draw(win)
-    area = l * w
-    peri = (2 * l) + (2 * w)
-
+    len1 = abs(q.getX() - p.getX())
+    wid = abs(q.getY() - p.getY())
+    r_shape = Rectangle(p, q)
+    r_shape.draw(win)
+    area = len1 * wid
+    peri = (2 * len1) + (2 * wid)
 
     inst_pt = Point(width / 2, height - 10)
     instructions = Text(inst_pt, "The area is: " + str(area))
@@ -96,14 +95,13 @@ def rectangle():
     perimeter = Text(peript, "The perimeter is: " + str(peri))
     perimeter.draw(win)
 
-
-    exitPoint = Point(width / 2, 20)
-    close = Text(exitPoint, "Click to Close Window")
+    exit_point = Point(width / 2, 20)
+    close = Text(exit_point, "Click to Close Window")
     close.draw(win)
-
 
     win.getMouse()
     win.close()
+
 
 def circle():
     width = 400
@@ -112,21 +110,21 @@ def circle():
 
     p = win.getMouse()
     q = win.getMouse()
-    center = p
     d = math.sqrt((q.getX() - p.getX()) ** 2 + (q.getY() - p.getY()) ** 2)
-    rShape = Circle(p, d)
-    rShape.draw(win)
+    r_shape = Circle(p, d)
+    r_shape.draw(win)
 
     radpt = Point(width / 2, height - 25)
     rad = Text(radpt, "The radius is: " + str(d))
     rad.draw(win)
 
-    exitPoint = Point(width / 2, 20)
-    close = Text(exitPoint, "Click to Close Window")
+    exit_point = Point(width / 2, 20)
+    close = Text(exit_point, "Click to Close Window")
     close.draw(win)
 
     win.getMouse()
     win.close()
+
 
 def pi2():
     n = eval(input("How terms are in the series?: "))
@@ -139,11 +137,12 @@ def pi2():
     print(acc)
     print("Difference from pi: ", math.pi - acc)
 
+
 def main():
     # squares()
     # rectangle()
     # circle()
-    # pi2()
+    pi2()
 
 
 main()
