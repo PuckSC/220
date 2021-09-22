@@ -139,9 +139,9 @@ def pi2():
 
 
 def main():
-    # squares()
-    # rectangle()
-    # circle()
+    squares()
+    rectangle()
+    circle()
     pi2()
 
 
