@@ -1,6 +1,6 @@
 """
-Name: <your name goes here – first and last>
-<ProgramName>.py
+Name: Patrick Puckhaber
+lab6.py
 """
 
 
@@ -42,20 +42,34 @@ def thirds():
         sentence = input("Enter sentence: ")
         print(sentence[2::3])
 
+
 def word_avg():
     x = input("Enter your sentence: ")
     acc = 0
     words = x.split(" ")
     for word in words:
         acc = acc + len(word)
-    output = acc / len(x)
+    output = acc / len(words)
     print(output)
+
+
+def pig_latin():
+    sentence = input("Enter Sentence to Translate: ")
+    sent1 = sentence.lower()
+    words = sent1.split(" ")
+    print(sentence, "-> ", end= " ")
+    for word in words:
+        output = word[1:] + word[0] + "ay"
+        print(output, end=" ")
+
 
 def main():
     # name_reverse()
     # company_name()
     # initials()
     # names()
+    # word_avg()
+    # pig_latin()
     # thirds()
 
     # add other function calls here
