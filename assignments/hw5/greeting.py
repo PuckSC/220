@@ -2,11 +2,13 @@
 Name: Patrick Puckhaber
 greeting.py
 
-Problem: A program that displays a heart and stuff
+Problem: A program that displays a heart and stuff. Lets user fire three arrows from any position,
+miss 3 times then message...
 
 Certification of Authenticity:
 I certify that this assignment is entirely my own work.
 """
+
 from random import random
 
 from graphics import *
