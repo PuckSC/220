@@ -11,7 +11,7 @@ I certify that this assignment is entirely my own work.
 
 from random import random
 
-from graphics import *
+from graphics import GraphWin, Point, Circle, Polygon, Line, Text, update
 
 
 def main():
@@ -61,8 +61,10 @@ def main():
     for i in range(3):
         org = window.getMouse()
         vec_org = Point(org.getX(), org.getY())
-        vector = Point(((5 - org.getX()) / abs(5 - org.getX()) * (5 / (5 - abs(5 - org.getX()))) + org.getX()),
-                       ((5 - org.getY()) / abs(5 - org.getY()) * (5 / (5 - abs(5 - org.getY()))) + org.getY()))
+        vector = Point(((5 - org.getX()) / abs(5 - org.getX()) * (5 / (5 - abs(5 -
+                        org.getX()))) + org.getX()),
+                       ((5 - org.getY()) / abs(5 - org.getY()) * (5 / (5 - abs(5 -
+                        org.getY()))) + org.getY()))
         arrow = Line(vec_org, vector)
         arrow.setArrow("last")
         arrow.draw(window)
@@ -81,8 +83,7 @@ def main():
         triangle.move(0, -.5)
         greet.move(0, 1)
 
-    luckpoint = Point(5, 6.5)
-    luck = Text(luckpoint, "Better Luck Next Year")
+    luck = Text(Point(5, 6.5), "Better Luck Next Year")
     luck.setFace("helvetica")
     luck.setSize(14)
     luck.setStyle("bold")
