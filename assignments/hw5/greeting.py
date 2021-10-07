@@ -69,7 +69,7 @@ def main():
         arrow.setArrow("last")
         arrow.draw(window)
 
-        for j in range(8):
+        for m in range(8):
             update(8)
             arrow.move((5 - org.getX())/10, (5 - org.getY())/10)
         arrow.undraw()
