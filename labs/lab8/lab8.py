@@ -1,6 +1,6 @@
 """
 Name: Patrick Puckhaber
-<ProgramName>.py
+lab8.py
 """
 
 from encoder import encode_better
