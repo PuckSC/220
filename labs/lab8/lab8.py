@@ -90,7 +90,7 @@ def main():
     calc_check_sum("0072946520")
     send_message("message.txt", "bob")
     send_safe_message("message.txt", "mike", 10)
-    send_uncrackable_message("message.txt", "aaron", "pad_file")
+    send_uncrackable_message("message.txt", "aaron", "pad_file.txt")
     pass
 
 
