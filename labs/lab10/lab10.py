@@ -74,6 +74,7 @@ def game_play():
         pos = eval(input("x player, select a position to place:"))
         spot_legal(board, pos)
         fill_spot(board, pos, "x")
+
         if game_end(board):
             if game_win(board, "x"):
                 display_board(board)
@@ -92,6 +93,7 @@ def game_play():
         pos = input("o player, select a position to place:")
         spot_legal(board, pos)
         fill_spot(board, pos, "o")
+
         if game_win(board, "X"):
             if game_win(board, "x"):
                 display_board(board)
