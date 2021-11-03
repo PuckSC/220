@@ -76,14 +76,15 @@ def game_play():
         fill_spot(board, pos, "x")
         if game_end(board):
             if game_win(board, "x"):
+                display_board(board)
                 print("Player X won!")
-                print(display_board(board))
                 break
             if game_win(board, "o"):
+                display_board(board)
                 print("Player o won!")
-                print(display_board(board))
                 break
             else:
+                display_board(board)
                 print("Game is a tie!")
 
         # return tie
@@ -93,12 +94,15 @@ def game_play():
         fill_spot(board, pos, "o")
         if game_win(board, "X"):
             if game_win(board, "x"):
+                display_board(board)
                 print("Player X won!")
                 break
             if game_win(board, "o"):
+                display_board(board)
                 print("Player o won!")
                 break
             else:
+                display_board(board)
                 print("Game is a tie!")
 
 
