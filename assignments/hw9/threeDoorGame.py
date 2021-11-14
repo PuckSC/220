@@ -19,17 +19,17 @@ def main():
 
     # button 1
     pos_1a, pos_1b = Point(5, 8), Point(10, 12)
-    btn_1 = Button(Rectangle(pos_1a, pos_1b), Text(Point(7.5, 10), "Door 1"))
+    btn_1 = Button(Rectangle(pos_1a, pos_1b), "Door 1")
     btn_1.draw(win)
 
     # button 2
     pos_2a, pos_2b = Point(12.5, 8), Point(17.5, 12)
-    btn_2 = Button(Rectangle(pos_2a, pos_2b), Text(Point(15, 10), "Door 2"))
+    btn_2 = Button(Rectangle(pos_2a, pos_2b), "Door 2")
     btn_2.draw(win)
 
     # button 3
     pos_3a, pos_3b = Point(20, 8), Point(25, 12)
-    btn_3 = Button(Rectangle(pos_3a, pos_3b), Text(Point(22.5, 10), "Door 3"))
+    btn_3 = Button(Rectangle(pos_3a, pos_3b), "Door 3")
     btn_3.draw(win)
 
     # Top text
