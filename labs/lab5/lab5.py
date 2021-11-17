@@ -16,10 +16,10 @@ def target():
     z = win_width
     p = Point(win_width / 2, win_height / 2)
     circle5 = Circle(p, z/2)
-    circle4 = Circle(p, z/2.5)
-    circle3 = Circle(p, z/3.5)
-    circle2 = Circle(p, z/5.5)
-    circle1 = Circle(p, z/10)
+    circle4 = Circle(p, 2 * z / 5)
+    circle3 = Circle(p, 3 * z / 10)
+    circle2 = Circle(p, z / 5)
+    circle1 = Circle(p, z / 10)
 
     circle5.setFill("white")
     circle4.setFill("black")
@@ -32,6 +32,9 @@ def target():
     circle3.draw(win)
     circle2.draw(win)
     circle1.draw(win)
+    bullpt = Point(win_width / 2, win_height / 2)
+    bull = Text(bullpt, "X")
+    bull.draw(win)
 
     # Wait for another click to exit
     win.getMouse()

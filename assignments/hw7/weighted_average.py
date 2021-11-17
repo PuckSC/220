@@ -17,7 +17,7 @@ def ind_avg(s_data):
     datum = data_prime[1].split(" ")
     data = []
     for i in datum:
-        point = int(i)
+        point = float(i)
         data.append(point)
     weight = data[0::2]
     grade = data[1::2]
@@ -62,7 +62,7 @@ def weighted_average(file_in, file_out):
         # grades with no weighting error are printed and added to class avg counter
         if err == 0:
             print(stu_name + "'s average:", round(avg, 1), file=output_file)
-            class_list.append(round(avg, 1))
+            class_list.append(avg)
     print("Class average:", round(sum(class_list) / len(class_list), 1), file=output_file)
     # close up files
     input_file.close()

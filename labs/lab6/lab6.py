@@ -71,7 +71,7 @@ def main():
     # word_avg()
     # pig_latin()
     # thirds()
-
+    word_avg()
     # add other function calls here
 
 

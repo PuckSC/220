@@ -139,10 +139,10 @@ def pi2():
 
 
 def main():
-    squares()
-    rectangle()
+    #squares()
+    #rectangle()
     circle()
-    pi2()
+    #pi2()
 
 
 main()

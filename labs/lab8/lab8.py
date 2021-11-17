@@ -23,9 +23,13 @@ def number_words(in_file_name, out_file_name):
 def hourly_wages(in_file_name, out_file_name):
     file_in = open(in_file_name, "r")
     file_out = open(out_file_name, "w")
-    for line in file_in:
-        new_line = line.split(" ")
+    lines = file_in.readlines()
+    for line in lines:
+        new_line = line.replace("\n", "")
+        print(new_line)
+        new_line = new_line.split(" ")
         new_line[2] = str(float(new_line[2]) + 1.65)
+        new_line.append(str(float(new_line[2]) * float(new_line[3])))
         file_out.write(" ".join(new_line) + "\n")
 
     file_in.close()
@@ -85,12 +89,12 @@ def send_uncrackable_message(file, friend, pad):
 
 def main():
     # add other function calls here
-    number_words("text_file.txt", "word_file.txt")
+    # number_words("text_file.txt", "word_file.txt")
     hourly_wages("employees.txt", "hourly_wages.txt")
-    calc_check_sum("0072946520")
-    send_message("message.txt", "bob")
-    send_safe_message("message.txt", "mike", 10)
-    send_uncrackable_message("message.txt", "aaron", "pad_file.txt")
+    # calc_check_sum("0072946520")
+    # send_message("message.txt", "bob")
+    # send_safe_message("message.txt", "mike", 10)
+    # send_uncrackable_message("message.txt", "aaron", "pad_file.txt")
     pass
 
 

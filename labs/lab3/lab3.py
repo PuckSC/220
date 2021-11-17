@@ -38,8 +38,9 @@ def newton():
 
 def sequence():
     x = eval(input("What is the number of terms in the series?: "))
-    for i in range(1, x + 1):
-        print(1 + (i // 2 * 2))
+    for i in range(x): # (1, x + 1)
+        # print(1 + (i // 2 * 2), end=" ")
+        print(i + (i + 1) % 2, end=" ")
 
 
 def pi():
